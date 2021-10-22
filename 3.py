@@ -10,12 +10,14 @@ def gen():
 
 
 gen = gen()
-arr = []
+generated_arr = []
 for i in range(50):
-    arr.append(next(gen))
+    generated_arr.append(next(gen))
+    print(generated_arr[i],end=" ")
+print("")
 
 
-def find_extremum():
+def find_extremum(arr):
     if len(arr) >= 2:
         if arr[0] < arr[1]:
             print(f"Local min at {arr[0]}")
@@ -41,4 +43,4 @@ def find_extremum():
             print(f"Local min at {arr[len(arr) - 1]}")
 
 
-find_extremum()
+find_extremum(generated_arr)

@@ -15,4 +15,4 @@ def calculate(a, b, eps):
     else:
         return calculate(mid, b, eps)
 
-print(calculate(-100, 100, 0.0000000001))
+print(calculate(-100, 100, 0.00001))
